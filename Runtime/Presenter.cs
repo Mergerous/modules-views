@@ -1,11 +1,11 @@
-using Modules.UI.Views;
-using R3;
+using System;
+using System.Collections.Generic;
 
 namespace Modules.Views
 {
     public abstract class Presenter
     {
-        protected readonly CompositeDisposable disposables = new CompositeDisposable();
+        protected readonly ICollection<IDisposable> disposables = new List<IDisposable>();
 
         public virtual void Subscribe()
         {
@@ -14,7 +14,12 @@ namespace Modules.Views
 
         public virtual void Unsubscribe()
         {
-            disposables.Dispose();
+            foreach (IDisposable disposable in disposables)
+            {
+                disposable.Dispose();
+            }
+
+            disposables.Clear();
         }
     }
 }
