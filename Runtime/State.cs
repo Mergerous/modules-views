@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
+using Modules.UI.Views;
 using UnityEngine;
 
-namespace Modules.UI.Views
+namespace Modules.Views
 {
     [Serializable]
     public sealed class State

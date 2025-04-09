@@ -2,9 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Modules.UI.Views;
 using UnityEngine;
 
-namespace Modules.UI.Views
+namespace Modules.Views
 {
     public sealed class View : MonoBehaviour
     {
