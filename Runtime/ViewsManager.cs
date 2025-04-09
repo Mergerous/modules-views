@@ -13,6 +13,7 @@ namespace Modules.Views
         public ViewsManager(ViewsSettings viewsSettings, ViewsContainer viewsContainer)
         {
             this.viewsSettings = viewsSettings;
+            this.viewsContainer = viewsContainer;
         }
 
         public View CreateView(string key)
