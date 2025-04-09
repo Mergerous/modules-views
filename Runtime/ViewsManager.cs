@@ -5,12 +5,12 @@ using Object = UnityEngine.Object;
 namespace Modules.Views
 {
     [UsedImplicitly]
-    public sealed class ViewManager
+    public sealed class ViewsManager
     {
         private readonly ViewsContainer viewsContainer;
         private readonly ViewsSettings viewsSettings;
 
-        public ViewManager(ViewsSettings viewsSettings, ViewsContainer viewsContainer)
+        public ViewsManager(ViewsSettings viewsSettings, ViewsContainer viewsContainer)
         {
             this.viewsSettings = viewsSettings;
         }
